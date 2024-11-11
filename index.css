@@ -27,3 +27,37 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/*
+
+Seccion de cards*/
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.9em;
+}
