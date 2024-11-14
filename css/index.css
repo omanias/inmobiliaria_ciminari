@@ -1,0 +1,128 @@
+.sidebar {
+    height: 100vh;
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+#mainimg img {
+    width: 100px;
+    height: auto;
+}
+
+/* Ajusta la alineación del contenedor para que la imagen permanezca a la izquierda */
+.navbar .container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+
+Seccion de cards*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 50px;
+}
+
+.card {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+#whatsappicon {
+    width: 50px;
+    height: auto;
+}
+
+.custom-btn {
+    background-color: #abebc6;
+    border-color: #abebc6;
+    color: black;
+}
+
+.custom-btn:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    margin: 0 20px;
+}
+
+footer img {
+    max-width: 300px;
+    height: auto;
+}
+
+footer #whatsappicon {
+    width: 40px;
+    height: auto;
+}
+
+/* Media query para pantallas de celular (max-width 480px) */
+@media (max-width: 480px) {
+    footer {
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 3px 0;
+        width: 100%;
+    }
+
+    footer img {
+        width: 40px;
+    }
+
+    footer #whatsappicon {
+        width: 25px;
+    }
+}
