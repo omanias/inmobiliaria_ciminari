@@ -1,3 +1,6 @@
+import { aplicarFiltros } from './func.js';
+
+
 function updatePriceValue(value) {
     document.getElementById("priceValue").textContent = value;
 }
@@ -33,7 +36,6 @@ async function fetchProperties() {
 
 fetchProperties();
 
-import { aplicarFiltros } from './func.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     const ids = {};

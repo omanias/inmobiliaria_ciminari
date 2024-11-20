@@ -1,3 +1,12 @@
+body {
+    background-image: url('../images/2560x1440_night-city-panorama-city-lights-singapore.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
 .sidebar {
     height: 100vh;
     background-color: #343a40;
@@ -26,9 +35,13 @@
     justify-content: space-between;
 }
 
-/*
 
-Seccion de cards*/
+#main-nav {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(177deg, rgba(2, 0, 36, 1) 0%, rgba(255, 29, 0, 1) 1%, rgba(255, 255, 255, 1) 45%);
+}
+
+/*Seccion de cards*/
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -37,15 +50,26 @@ Seccion de cards*/
     align-items: center;
     margin: 0;
     padding: 50px;
+
 }
 
 .card {
     width: 200px;
     padding: 15px;
+    margin: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Efecto hover */
+.card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
 }
 
 .card img {
