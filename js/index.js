@@ -33,3 +33,9 @@ async function fetchProperties() {
 
 fetchProperties();
 
+import { aplicarFiltros } from './func.js';
+
+document.addEventListener("DOMContentLoaded", () => {
+    const ids = {};
+    aplicarFiltros(ids);
+});
